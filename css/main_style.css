@@ -1,0 +1,13 @@
+.main {
+  margin-top: 30px;
+}
+
+.li-count ol {
+  list-style: none;
+  counter-reset: li;
+}
+
+.li-count li:before {
+  counter-increment: li;
+  content: counters(li, ".") ". ";
+}

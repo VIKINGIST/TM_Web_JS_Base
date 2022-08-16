@@ -4,9 +4,204 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="../css/main_style.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <title>Домашнє завдання №1</title>
+    <script src="../js/bootstrap.bundle.min.js"></script>
   </head>
   <body>
-    <a href="../index.html">На головну сторінку</a>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html"
+                >Головна</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle active"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Домашні Завдання
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item disabled" href="#">ДЗ 1</a>
+                </li>
+                <li><a class="dropdown-item" href="./HW2/hw2.html">ДЗ 2</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container main">
+      <div class="row">
+        <div class="col-sm-3 d-none d-md-block">
+          <div id="list-example" class="list-group position-fixed">
+            <a
+              class="list-group-item list-group-item-action"
+              href="#list-item-1"
+              >Задача 1</a
+            >
+            <a
+              class="list-group-item list-group-item-action"
+              href="#list-item-2"
+              >Задача 2</a
+            >
+            <a
+              class="list-group-item list-group-item-action"
+              href="#list-item-3"
+              >Задача 3</a
+            >
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div
+            data-bs-spy="scroll"
+            data-bs-target="#list-example"
+            data-bs-smooth-scroll="true"
+            class="scrollspy-example"
+            tabindex="0"
+          >
+            <h4 id="list-item-1">
+              Задача 1. Створити веб-сторінку Вашого класу.
+            </h4>
+            <p>
+              Мій класс - це маленький відділ аналітики та маркетингу в школі
+              під назвою ThinkMobiles, також наш клас займається створенням
+              відео для YT
+            </p>
+            <p>Класний Керівник: Олександр Соханич</p>
+            <p>Староста классу: Король Віктор</p>
+            <h4 id="list-item-2">
+              Задача 2. Створити веб-сторінку Вашого улюбленого музичного гурту.
+            </h4>
+            <p>Музикальний гурт DJ пельмень</p>
+            <p>Склад гурту:</p>
+            <p align="left">Розовий гусь</p>
+            <p align="center">Окно</p>
+            <p align="right">темнота</p>
+            <p>Текст пісні:</p>
+            <p>
+              Розовый гусь смотрит в окно,<br />
+              Хочет понять, почему так темно.
+            </p>
+            <hr />
+            <p>
+              Розовый гусь смотрит в окно,<br />
+              Хочет понять, почему так темно.
+            </p>
+            <hr />
+            <p>
+              Розовый гусь смотрит в окно,<br />
+              Хочет понять, почему так темно.
+            </p>
+            <hr />
+            <p>
+              Розовый гусь смотрит в окно,<br />
+              Хочет понять, почему так темно.
+            </p>
+            <hr />
+            <p>
+              Розовый гусь смотрит в окно,<br />
+              Хочет понять, почему так темно.
+            </p>
+            <hr />
+            <p>
+              Розовый гусь смотрит в окно,<br />
+              Хочет понять, почему так темно.
+            </p>
+            <hr />
+            <p>
+              Розовый гусь смотрит в окно,<br />
+              Хочет понять, почему так темно.
+            </p>
+            <hr />
+            <p>
+              Розовый гусь смотрит в окно,<br />
+              Хочет понять, почему так темно.
+            </p>
+            <hr />
+            <p>...</p>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/MID7USSp-vM"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <h4 id="list-item-3">
+              Задача 3. Зробити веб-сторінку у якій додати...
+            </h4>
+            <p>Перше завдання 3-ї задачі "нумерований список пріоритетів;"</p>
+            <p>
+              Я просто виведу свій варіант нумерації з підпунктами без
+              особливого смислового навантаження...
+            </p>
+            <div class="li-count">
+              <ol>
+                <li>пункт</li>
+                <li>
+                  пункт
+                  <ol>
+                    <li>пункт</li>
+                    <li>пункт</li>
+                    <li>
+                      пункт
+                      <ol>
+                        <li>пункт</li>
+                        <li>пункт</li>
+                        <li>пункт</li>
+                      </ol>
+                    </li>
+                    <li>пункт</li>
+                  </ol>
+                </li>
+                <li>пункт</li>
+                <li>пункт</li>
+              </ol>
+              <p>
+                Взято з сайту
+                <a href="https://html5book.ru/html-lists/">html5book.ru</a>
+              </p>
+            </div>
+            <hr />
+            <p>Маркований список:</p>
+            <ul>
+              <li>Вода</li>
+              <li>Кола</li>
+              <li>Божий напій</li>
+              <li>Пиво</li>
+            </ul>
+            <hr />
+            <p>абревіатуру вашого навчального закладу (у якому навчалися).</p>
+            <p title="ThinkMobiles">TM</p>
+            <hr />
+            <p>ваше означення щастя (бажано у вигляді формули);</p>
+            <p class="text-warning">не зрозумів завдання....</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

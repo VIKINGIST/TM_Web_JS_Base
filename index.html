@@ -4,17 +4,57 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/main_style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <title>Головна сторінка</title>
+    <script src="js/bootstrap.bundle.min.js"></script>
   </head>
   <body>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, officiis
-      sapiente. Error optio ratione praesentium ipsa ipsam eum impedit enim
-      architecto maiores vero, repudiandae veritatis sit ut distinctio pariatur
-      alias!
-    </p>
-    <div><a href="./HW1/hw1.html">ДЗ 1</a></div>
-    <div><a href="./HW2/hw2.html">ДЗ 2</a></div>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-current="page" href="#"
+                >Головна</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Домашні Завдання
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./HW1/hw1.html">ДЗ 1</a></li>
+                <li><a class="dropdown-item" href="./HW2/hw2.html">ДЗ 2</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="position-absolute top-50 start-50 translate-middle">
+      <div class="spinner-border" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
   </body>
 </html>

@@ -11,3 +11,12 @@
   counter-increment: li;
   content: counters(li, ".") ". ";
 }
+
+.topbtn {
+  opacity: 0.3;
+  transition: 0.5s;
+}
+
+.topbtn:hover {
+  opacity: 1;
+}

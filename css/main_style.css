@@ -20,3 +20,49 @@
 .topbtn:hover {
   opacity: 1;
 }
+
+.lable-range {
+  width: 100%;
+  text-align: center;
+}
+
+form {
+  margin: 25px auto;
+  width: 400px;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 0.2em;
+}
+
+form div + div {
+  margin-top: 0.4em;
+}
+
+label {
+  display: inline-block;
+  width: 105px;
+  text-align: right;
+}
+
+input,
+textarea {
+  width: 245px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #999;
+  border-radius: 0.2em;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #000;
+}
+
+textarea {
+  vertical-align: top;
+  resize: vertical;
+}
+
+.form-check-label {
+  width: 100%;
+}

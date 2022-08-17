@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/main_style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <title>Домашнє завдання №2</title>
     <script src="../JS/bootstrap.bundle.min.js"></script>
@@ -54,9 +55,224 @@
         </div>
       </div>
     </nav>
-    <div class="position-absolute top-50 start-50 translate-middle">
-      <div class="spinner-border" role="status">
-        <span class="visually-hidden">Loading...</span>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <form>
+            <fieldset>
+              <legend>Про себе</legend>
+              <div>
+                <label for="pib">ФІО</label>
+                <input
+                  type="text"
+                  id="pib"
+                  placeholder="Бурбук Іван Побатькович"
+                />
+              </div>
+              <div>
+                <label for="address">Адреса</label>
+                <input type="text" id="address" />
+              </div>
+              <div>
+                <label for="age">Вік</label>
+                <input type="date" id="age" />
+              </div>
+              <div>
+                <label for="mail">E-mail</label>
+                <input
+                  type="email"
+                  id="mail"
+                  placeholder="mymail@example.com"
+                />
+              </div>
+            </fieldset>
+          </form>
+        </div>
+        <div class="col-lg-6">
+          <form>
+            <fieldset>
+              <legend>Місце роботи</legend>
+              <div>
+                <label for="work-address">Адреса</label>
+                <input type="text" id="work-address" />
+              </div>
+              <div>
+                <label for="work-experience">Стаж роботи</label>
+                <input type="text" id="work-experience" />
+              </div>
+              <div>
+                <label for="work-start-date">Почок роботи</label>
+                <input type="date" id="work-start-date" />
+              </div>
+            </fieldset>
+          </form>
+        </div>
+        <div class="col-lg-6">
+          <form>
+            <fieldset>
+              <legend>Статистичний опитувальник</legend>
+              <div>
+                <label class="lable-range" for="president-ratio"
+                  >Як оцінюєте роботу президента від 0 до 5</label
+                >
+                <input
+                  type="range"
+                  class="form-range"
+                  min="0"
+                  max="5"
+                  step="1"
+                  id="president-ratio"
+                />
+              </div>
+              <div>
+                <label class="lable-range" for="comment"
+                  >Коментар стосовно останніх виборів</label
+                >
+                <textarea class="lable-range" id="comment"></textarea>
+              </div>
+              <div>
+                <label class="lable-range" for="best-vacation"
+                  >Найкращий місяць для відпустки</label
+                >
+                <select class="form-select" type="date" id="best-vacation">
+                  <option value="1">Січень</option>
+                  <option value="2">Лютий</option>
+                  <option value="3">Березень</option>
+                  <option value="4">Квітень</option>
+                  <option value="5">Травень</option>
+                  <option value="6">Червень</option>
+                  <option value="7">Липень</option>
+                  <option value="8">Серпень</option>
+                  <option value="9">Вересень</option>
+                  <option value="10">Жовтень</option>
+                  <option value="11">Листопад</option>
+                  <option value="12">Грудень</option>
+                </select>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+        <div class="col-lg-6">
+          <form>
+            <fieldset>
+              <legend>Пріотети</legend>
+              <label class="lablel-title">Вибір кави</label>
+              <div class="lable-range">
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    id="amerikano"
+                    value="amerikano"
+                    name="coffe"
+                  />
+                  <label class="form-check-label" for="amerikano"
+                    >Амерікано</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    id="espresso"
+                    value="espresso"
+                    name="coffe"
+                  />
+                  <label class="form-check-label" for="espresso"
+                    >Еспрессо</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    id="ristretto"
+                    value="ristretto"
+                    name="coffe"
+                  />
+                  <label class="form-check-label" for="ristretto"
+                    >Рістретто</label
+                  >
+                </div>
+              </div>
+              <label class="lablel-title">Місця відпочинку</label>
+              <div class="lable-range">
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="sea"
+                    value="sea"
+                    name="sea"
+                  />
+                  <label class="form-check-label" for="sea">Море</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="mount"
+                    value="mount"
+                    name="mount"
+                  />
+                  <label class="form-check-label" for="mount">Гори</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="fores"
+                    value="fores"
+                    name="fores"
+                  />
+                  <label class="form-check-label" for="fores">Ліс</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="home"
+                    value="home"
+                    name="home"
+                  />
+                  <label class="form-check-label" for="home">Дома</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <label class="lablel-title">Авто</label>
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option value="Opel">Opel</option>
+                    <option value="Peugeot">Peugeot</option>
+                    <option value="BMW">BMW</option>
+                  </select>
+                </div>
+                <div class="col">
+                  <label class="lablel-title">Овочі</label>
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <optgroup label="Овочі"></optgroup>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <optgroup label="Фрукти"></optgroup>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+        <div class="col-lg text-center btngruup">
+          <button type="button" class="btn btn-primary">Відправити</button>
+          <button type="button" class="btn btn-danger">
+            Очистити всі поля
+          </button>
+        </div>
       </div>
     </div>
   </body>

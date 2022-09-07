@@ -2,3 +2,19 @@
   flex-direction: column;
   width: 400px;
 }
+
+/* task2 css */
+.mood {
+  border: 1px solid;
+  float: left;
+  width: 100%;
+}
+.moodMenu {
+  float: left;
+}
+
+.moodSmile {
+  float: right;
+  margin: 5px;
+  font-size: 50px;
+}

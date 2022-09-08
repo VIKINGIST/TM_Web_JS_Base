@@ -2,13 +2,13 @@ function myMoodFunction() {
   let mood = parseInt(prompt(`введіть номер пункту меню`));
   if (mood == 1) {
     // document.write(`Веселий`);
-    document.getElementById("moodImgInsert").innerHTML = "😀";
+    document.getElementById('moodImgInsert').innerHTML = '😀';
   } else if (mood == 2) {
     //   document.write(`Сумний`);
-    document.getElementById("moodImgInsert").innerHTML = "😔";
+    document.getElementById('moodImgInsert').innerHTML = '😔';
   } else if (mood == 3) {
     // document.write(`Обурений`);
-    document.getElementById("moodImgInsert").innerHTML = "🤬";
+    document.getElementById('moodImgInsert').innerHTML = '🤬';
   } else {
     alert(`такого пункту меню нажаль нема`);
   }
@@ -23,25 +23,19 @@ function myTask1Function() {
     if (rand == playerNumber) {
       alert(`Вітаю, ви відгадали число!`);
     } else {
-      alert(
-        `Нажаль ви програли, обидва рази ви не відгадали, повезе наступним разом`
-      );
+      alert(`Нажаль ви програли, обидва рази ви не відгадали, повезе наступним разом`);
     }
   } else if (rand == playerNumber) {
     alert(`Вітаю, ви відгадали число!!`);
   } else {
-    alert(
-      `Нажаль ви програли, обидва рази ви не відгадали, повезе наступним разом`
-    );
+    alert(`Нажаль ви програли, обидва рази ви не відгадали, повезе наступним разом`);
   }
 }
 
 function myTask2Function() {
   let rand = Math.floor(Math.random() * (1, 100) + 1);
   let playerNumber = parseInt(
-    prompt(
-      `введіть число від 1 до 100 (підказка: випадкове значення = ${rand})`
-    )
+    prompt(`введіть число від 1 до 100 (підказка: випадкове значення = ${rand})`)
   );
   let calcPlayerDevation = rand - playerNumber;
   if (calcPlayerDevation > 10 || calcPlayerDevation < -10) {
@@ -58,9 +52,7 @@ function myTask2Function() {
 function myTask3Function() {
   let rand = Math.floor(Math.random() * (1, 10) + 1);
   let playerNumber1 = parseInt(
-    prompt(
-      `Гравець №1: введіть число від 1 до 10 (випадкове значення = ${rand})`
-    )
+    prompt(`Гравець №1: введіть число від 1 до 10 (випадкове значення = ${rand})`)
   );
   let playerNumber2 = parseInt(prompt(`Гравець №2: введіть число від 1 до 10`));
 
